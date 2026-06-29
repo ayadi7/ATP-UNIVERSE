@@ -1,8 +1,125 @@
-const players=[['Jannik Sinner', 'Italy', 1, 13650, 0], ['Carlos Alcaraz', 'Spain', 2, 10760, 1], ['Alexander Zverev', 'Germany', 3, 7590, 0], ['Novak Djokovic', 'Serbia', 4, 5760, 3], ['Alex de Minaur', 'Australia', 5, 4910, 0], ['Ben Shelton', 'USA', 6, 4560, 0], ['Felix Auger-Aliassime', 'Canada', 7, 4440, 0], ['Taylor Fritz', 'USA', 8, 3915, 0], ['Daniil Medvedev', 'Russia', 9, 3780, 0], ['Flavio Cobolli', 'Italy', 10, 3460, 0], ['Rafael Nadal', 'Spain', 11, 2650, 2], ['Alexander Bublik', 'Kazakhstan', 12, 2620, 0], ['Andrey Rublev', 'Russia', 13, 2620, 0], ['Casper Ruud', 'Norway', 14, 2425, 0], ['Jack Draper', 'Great Britain', 15, 2360, 0], ['Frances Tiafoe', 'USA', 16, 2180, 0], ['Arthur Fils', 'France', 17, 1890, 0], ['Hubert Hurkacz', 'Poland', 18, 1880, 0], ['Holger Rune', 'Denmark', 19, 1825, 0], ['Tommy Paul', 'USA', 20, 1790, 0], ['Sebastian Korda', 'USA', 21, 1780, 0], ['Lorenzo Musetti', 'Italy', 22, 1720, 0], ['Juan Martin del Potro', 'Argentina', 23, 1700, 0], ['Giovanni Mpetshi Perricard', 'France', 24, 1620, 0], ['Ugo Humbert', 'France', 25, 1460, 0], ['Matteo Berrettini', 'Italy', 26, 1385, 0], ['Karen Khachanov', 'Russia', 27, 1380, 0], ['Grigor Dimitrov', 'Bulgaria', 28, 1340, 0], ['Jakub Mensik', 'Czechia', 29, 1315, 0], ['Joao Fonseca', 'Brazil', 30, 1280, 0], ['Jiri Lehecka', 'Czechia', 31, 1250, 0], ['Denis Shapovalov', 'Canada', 32, 1210, 0], ['Tallon Griekspoor', 'Netherlands', 33, 1160, 0], ['Cameron Norrie', 'Great Britain', 34, 1125, 0], ['Francisco Cerundolo', 'Argentina', 35, 1090, 0], ['Nicolas Jarry', 'Chile', 36, 1060, 0], ['Stefanos Tsitsipas', 'Greece', 37, 1050, 0], ['Miomir Kecmanovic', 'Serbia', 38, 1005, 0], ['Jordan Thompson', 'Australia', 39, 980, 0], ['Thanasi Kokkinakis', 'Australia', 40, 980, 0], ['Roger Federer', 'Switzerland', 41, 950, 0], ['Gael Monfils', 'France', 42, 930, 0], ['Stan Wawrinka', 'Switzerland', 43, 910, 0], ['Alexei Popyrin', 'Australia', 44, 900, 0], ['Kei Nishikori', 'Japan', 45, 890, 0], ['Andy Murray', 'Great Britain', 46, 870, 0], ['Milos Raonic', 'Canada', 47, 850, 0], ['Kevin Anderson', 'South Africa', 48, 830, 0], ['Richard Gasquet', 'France', 49, 810, 0], ['Jan-Lennard Struff', 'Germany', 50, 804, 0], ['Reilly Opelka', 'USA', 51, 790, 0], ['Nick Kyrgios', 'Australia', 52, 775, 0], ['Roberto Bautista Agut', 'Spain', 53, 760, 0], ['Marin Cilic', 'Croatia', 54, 745, 0], ['David Goffin', 'Belgium', 55, 730, 0], ['Borna Coric', 'Croatia', 56, 715, 0], ['Fabio Fognini', 'Italy', 57, 700, 0], ['Dominic Thiem', 'Austria', 58, 685, 0], ['Jo-Wilfried Tsonga', 'France', 59, 670, 0], ['John Isner', 'USA', 60, 655, 0], ['Tomas Berdych', 'Czechia', 61, 640, 0], ['Jack Sock', 'USA', 62, 625, 0], ['Sam Querrey', 'USA', 63, 610, 0], ['Bernard Tomic', 'Australia', 64, 595, 0], ['Learner Tien', 'USA', 65, 560, 0], ['Alex Michelsen', 'USA', 66, 545, 0], ['Dino Prizmic', 'Croatia', 67, 530, 0], ['Martin Landaluce', 'Spain', 68, 515, 0], ['Christopher Eubanks', 'USA', 69, 500, 0], ['Alexander Blockx', 'Belgium', 70, 485, 0], ['Kyle Edmund', 'Great Britain', 71, 470, 0], ['Daniel Evans', 'Great Britain', 72, 455, 0], ['Aleksandar Vukic', 'Australia', 73, 440, 0], ['Federico Coria', 'Argentina', 74, 425, 0], ['Nuno Borges', 'Portugal', 75, 410, 0], ['Thiago Seyboth Wild', 'Brazil', 76, 395, 0], ['Diego Schwartzman', 'Argentina', 77, 380, 0], ['Matthew Ebden', 'Australia', 78, 365, 0], ['Dominik Koepfer', 'Germany', 79, 350, 0], ['Mariano Navone', 'Argentina', 80, 335, 0], ['Tomas Martin Etcheverry', 'Argentina', 81, 320, 0], ['Camilo Ugo Carabelli', 'Argentina', 82, 305, 0], ['Jason Kubler', 'Australia', 83, 290, 0], ['Mackenzie McDonald', 'USA', 84, 275, 0], ['Max Purcell', 'Australia', 85, 260, 0], ['Yoshihito Nishioka', 'Japan', 86, 245, 0], ['J.J. Wolf', 'USA', 87, 230, 0], ['Luca Van Assche', 'France', 88, 215, 0], ["Christopher O'Connell", 'Australia', 89, 200, 0], ['Rinky Hijikata', 'Australia', 90, 185, 0], ['Taro Daniel', 'Japan', 91, 170, 0], ['Arthur Rinderknech', 'France', 92, 155, 0], ['Yibing Wu', 'China', 93, 140, 0], ['Michael Mmoh', 'USA', 94, 125, 0], ['Zizou Bergs', 'Belgium', 95, 110, 0], ['Benoit Paire', 'France', 96, 95, 0]];
-const tournaments=[['Australian Open', 'Hard', 'Novak Djokovic', 'Carlos Alcaraz', '6-7[6], 7-5, 6-4, 3-6, 6-3'], ['Indian Wells', 'Hard', 'Novak Djokovic', 'Carlos Alcaraz', '6-4, 4-6, 7-6[5]'], ['Miami', 'Hard', 'Carlos Alcaraz', 'Novak Djokovic', '4-6, 7-5, 6-3'], ['Monte-Carlo', 'Clay', 'Rafael Nadal', 'Carlos Alcaraz', '6-4, 3-6, 6-3'], ['Madrid', 'Clay', 'Novak Djokovic', 'Rafael Nadal', '4-6, 7-5, 6-4'], ['Rome', 'Clay', 'Rafael Nadal', 'Novak Djokovic', '6-3, 4-6, 6-4']];
-function showTab(id){document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));document.getElementById(id).classList.add('active')}
-function renderRankings(){document.getElementById('rankingsTable').innerHTML='<tr><th>#</th><th>Player</th><th>Country</th><th>Points</th><th>Titles</th></tr>'+players.map(p=>`<tr><td>${p[2]}</td><td>${p[0]}</td><td>${p[1]}</td><td>${p[3]}</td><td>${p[4]}</td></tr>`).join('')}
-function renderRace(){let s=[...players].sort((a,b)=>b[4]-a[4]||b[3]-a[3]).slice(0,20);document.getElementById('raceTable').innerHTML='<tr><th>#</th><th>Player</th><th>Titles</th><th>Points</th></tr>'+s.map((p,i)=>`<tr><td>${i+1}</td><td>${p[0]}</td><td>${p[4]}</td><td>${p[3]}</td></tr>`).join('')}
-function renderTournaments(){document.getElementById('tournamentList').innerHTML=tournaments.map(t=>`<div class="tournament"><h3>${t[0]} <span class="badge">${t[1]}</span></h3><p>Champion: <b>${t[2]}</b></p><p>Runner-up: ${t[3]}</p><p>Final: ${t[4]}</p></div>`).join('');document.getElementById('champions').innerHTML=tournaments.map(t=>`<div class="card"><b>${t[0]}</b><br>${t[2]}</div>`).join('')}
-function renderPlayers(){let q=(document.getElementById('search')?.value||'').toLowerCase();document.getElementById('playersList').innerHTML=players.filter(p=>p[0].toLowerCase().includes(q)).map(p=>`<div class="player"><b>#${p[2]} ${p[0]}</b><br>${p[1]} · ${p[3]} pts · Titles: ${p[4]}</div>`).join('')}
-renderRankings();renderRace();renderTournaments();renderPlayers();
+const $ = (id)=>document.getElementById(id);
+
+function showTab(id){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  $(id).classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function changeClass(v){ return v>0?'up':v<0?'down':'same'; }
+function changeText(v){ return v>0?`↑ ${v}`:v<0?`↓ ${Math.abs(v)}`:'—'; }
+
+function renderHome(){
+  const top = DATA.rankingsBeforeRG.slice(0,4);
+  $('home').innerHTML = `
+    <div class="hero">
+      <h2>Roland Garros 2026 is next</h2>
+      <p>ATP Universe is now powered by a permanent website instead of temporary Excel files.</p>
+      <p><strong>${DATA.meta.playersCount} players</strong> are locked in the database.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><b>World No.1</b><div class="value">${top[0].player}</div><span>${top[0].pointsBeforeRG} pts</span></div>
+      <div class="card"><b>Season Leader</b><div class="value">Novak Djokovic</div><span>AO · Indian Wells · Madrid</span></div>
+      <div class="card"><b>Clay King</b><div class="value">Rafael Nadal</div><span>Monte-Carlo · Rome</span></div>
+      <div class="card"><b>Next Event</b><div class="value">Roland Garros</div><span>Grand Slam · Clay</span></div>
+    </div>
+    <h2>Season Champions</h2>
+    <div class="grid">${DATA.seasonTournaments.map(t=>`<div class="card"><b>${t.name}</b><div class="value">${t.champion}</div><span>${t.score}</span></div>`).join('')}</div>
+  `;
+}
+
+function renderRankings(){
+  $('rankings').innerHTML = `
+    <h2>Rankings Before Roland Garros</h2>
+    <input class="search" id="rankingSearch" placeholder="Search rankings..." onkeyup="renderRankingTable()">
+    <table id="rankingTable"></table>
+  `;
+  renderRankingTable();
+}
+
+function renderRankingTable(){
+  const q = ($('rankingSearch')?.value || '').toLowerCase();
+  const rows = DATA.rankingsBeforeRG.filter(r=>r.player.toLowerCase().includes(q));
+  $('rankingTable').innerHTML = `<tr><th>#</th><th>Change</th><th>Player</th><th>Points</th><th>AO Result</th><th>Titles</th></tr>`+
+    rows.map(r=>`<tr>
+      <td><b>${r.rankBeforeRG}</b></td>
+      <td class="${changeClass(r.changeBeforeRG)}">${changeText(r.changeBeforeRG)}</td>
+      <td>${r.player}</td>
+      <td>${r.pointsBeforeRG}</td>
+      <td>${r.aoResult}</td>
+      <td>${r.titlesBeforeRG}</td>
+    </tr>`).join('');
+}
+
+function renderPlayers(){
+  $('players').innerHTML = `
+    <h2>Players Database</h2>
+    <input class="search" id="playerSearch" placeholder="Search player..." onkeyup="renderPlayersList()">
+    <div id="playersList" class="playerGrid"></div>
+  `;
+  renderPlayersList();
+}
+
+function renderPlayersList(){
+  const q = ($('playerSearch')?.value || '').toLowerCase();
+  const rows = DATA.rankingsBeforeRG.filter(r=>r.player.toLowerCase().includes(q));
+  $('playersList').innerHTML = rows.map(r=>`
+    <div class="playerCard">
+      <h3>#${r.rankBeforeRG} ${r.player}</h3>
+      <p><b>${r.pointsBeforeRG}</b> points</p>
+      <p>AO: ${r.aoResult || '—'} · Titles: ${r.titlesBeforeRG}</p>
+      <p class="small">${r.source}</p>
+    </div>
+  `).join('');
+}
+
+function renderTournaments(){
+  $('tournaments').innerHTML = `
+    <h2>2026 Tournament Archive</h2>
+    <div class="grid">
+      ${DATA.seasonTournaments.map(t=>`
+        <div class="card">
+          <h3>${t.name} <span class="badge">${t.category}</span></h3>
+          <p>Surface: ${t.surface}</p>
+          <p>Champion: <b class="gold">${t.champion}</b></p>
+          <p>Runner-up: ${t.runnerUp}</p>
+          <p>Final: ${t.score}</p>
+          <p class="muted">${t.story}</p>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function renderAustralia(){
+  $('australia').innerHTML = `
+    <h2>Australian Open 2026 GOLD EDITION</h2>
+    <div class="panel">
+      <p><b>Champion:</b> Novak Djokovic</p>
+      <p><b>Runner-up:</b> Carlos Alcaraz</p>
+      <p><b>Player of Tournament:</b> Rafael Nadal</p>
+      <p><b>Match of Tournament:</b> Nadal def. Sinner, Round of 16</p>
+    </div>
+    <h3>Final-stage archive</h3>
+    ${DATA.australianOpenFinalArchive.map(m=>`
+      <div class="match">
+        <b>${m.round}</b> · ${m.playerA} vs ${m.playerB}
+        <p>Winner: <span class="gold">${m.winner}</span> · ${m.score}</p>
+        <p>MVP: ${m.mvp} · ${m.duration} · ${m.stadium}</p>
+        <p class="muted">${m.story}</p>
+      </div>
+    `).join('')}
+  `;
+}
+
+function renderAdmin(){
+  $('admin').innerHTML = `
+    <h2>Admin Roadmap</h2>
+    <div class="panel">
+      <p>Next version will add editable tournament results directly in the browser.</p>
+      <p>For now, this site stores the official ATP Universe database and avoids losing results in Excel files.</p>
+    </div>
+  `;
+}
+
+renderHome();renderRankings();renderPlayers();renderTournaments();renderAustralia();renderAdmin();

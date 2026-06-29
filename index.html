@@ -1,32 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ATP Universe</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATP Universe 2026</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header><h1>ATP Universe 2026</h1><p>Road to Roland Garros</p></header>
-<nav>
-<button onclick="showTab('home')">Home</button>
-<button onclick="showTab('rankings')">Rankings</button>
-<button onclick="showTab('race')">ATP Race</button>
-<button onclick="showTab('tournaments')">Tournaments</button>
-<button onclick="showTab('players')">Players</button>
-</nav>
-<main>
-<section id="home" class="tab active">
-<h2>Season Champions</h2>
-<div id="champions"></div>
-<h2>Next Tournament</h2>
-<div class="highlight">Roland Garros 2026</div>
-</section>
-<section id="rankings" class="tab"><h2>Rankings Before Roland Garros</h2><table id="rankingsTable"></table></section>
-<section id="race" class="tab"><h2>ATP Race</h2><table id="raceTable"></table></section>
-<section id="tournaments" class="tab"><h2>Tournament Archive</h2><div id="tournamentList"></div></section>
-<section id="players" class="tab"><h2>Players</h2><input id="search" placeholder="Search player..." onkeyup="renderPlayers()"><div id="playersList"></div></section>
-</main>
-<script src="script.js"></script>
+  <header class="topbar">
+    <div>
+      <h1>ATP Universe</h1>
+      <p>2026 Season · Road to Roland Garros</p>
+    </div>
+    <div class="version">v2.0</div>
+  </header>
+
+  <nav class="tabs">
+    <button onclick="showTab('home')">Home</button>
+    <button onclick="showTab('rankings')">Rankings</button>
+    <button onclick="showTab('players')">Players</button>
+    <button onclick="showTab('tournaments')">Tournaments</button>
+    <button onclick="showTab('australia')">Australian Open</button>
+    <button onclick="showTab('admin')">Admin</button>
+  </nav>
+
+  <main>
+    <section id="home" class="tab active"></section>
+    <section id="rankings" class="tab"></section>
+    <section id="players" class="tab"></section>
+    <section id="tournaments" class="tab"></section>
+    <section id="australia" class="tab"></section>
+    <section id="admin" class="tab"></section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
