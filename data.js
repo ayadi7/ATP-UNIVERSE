@@ -1,676 +1,965 @@
 const DATA = {
+  "version": "4.0",
   "players": [
     [
       "Jannik Sinner",
       "Italy",
+      "🇮🇹",
       1,
-      13650,
-      0
+      15250,
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Carlos Alcaraz",
       "Spain",
+      "🇪🇸",
       2,
-      10760,
-      1
-    ],
-    [
-      "Alexander Zverev",
-      "Germany",
-      3,
-      7590,
-      0
+      13760,
+      1,
+      "Right",
+      "Clay"
     ],
     [
       "Novak Djokovic",
       "Serbia",
+      "🇷🇸",
+      3,
+      9410,
+      3,
+      "Right",
+      "Hard"
+    ],
+    [
+      "Alexander Zverev",
+      "Germany",
+      "🇩🇪",
       4,
-      5760,
-      3
-    ],
-    [
-      "Alex de Minaur",
-      "Australia",
-      5,
-      4910,
-      0
-    ],
-    [
-      "Ben Shelton",
-      "USA",
-      6,
-      4560,
-      0
-    ],
-    [
-      "Felix Auger-Aliassime",
-      "Canada",
-      7,
-      4440,
-      0
-    ],
-    [
-      "Taylor Fritz",
-      "USA",
-      8,
-      3915,
-      0
-    ],
-    [
-      "Daniil Medvedev",
-      "Russia",
-      9,
-      3780,
-      0
-    ],
-    [
-      "Flavio Cobolli",
-      "Italy",
-      10,
-      3460,
-      0
+      8590,
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Rafael Nadal",
       "Spain",
-      11,
-      2650,
-      2
+      "🇪🇸",
+      5,
+      8450,
+      2,
+      "Left",
+      "Clay"
     ],
     [
-      "Alexander Bublik",
-      "Kazakhstan",
-      12,
-      2620,
-      0
+      "Alex de Minaur",
+      "Australia",
+      "🇦🇺",
+      6,
+      5510,
+      0,
+      "Right",
+      "Hard"
+    ],
+    [
+      "Ben Shelton",
+      "USA",
+      "🇺🇸",
+      7,
+      5360,
+      0,
+      "Left",
+      "Hard"
+    ],
+    [
+      "Daniil Medvedev",
+      "Russia",
+      "",
+      8,
+      4780,
+      0,
+      "Right",
+      "Hard"
+    ],
+    [
+      "Felix Auger-Aliassime",
+      "Canada",
+      "🇨🇦",
+      9,
+      4440,
+      0,
+      "Right",
+      "Hard"
+    ],
+    [
+      "Taylor Fritz",
+      "USA",
+      "🇺🇸",
+      10,
+      3915,
+      0,
+      "Right",
+      "Hard"
+    ],
+    [
+      "Flavio Cobolli",
+      "Italy",
+      "🇮🇹",
+      11,
+      3460,
+      0,
+      "Right",
+      "Clay"
     ],
     [
       "Andrey Rublev",
       "Russia",
-      13,
-      2620,
-      0
+      "",
+      12,
+      3420,
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Casper Ruud",
       "Norway",
+      "🇳🇴",
+      13,
+      3125,
+      0,
+      "Right",
+      "Clay"
+    ],
+    [
+      "Alexander Bublik",
+      "Kazakhstan",
+      "🇰🇿",
       14,
-      2425,
-      0
+      2820,
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Jack Draper",
       "Great Britain",
+      "🇬🇧",
       15,
-      2360,
-      0
+      2660,
+      0,
+      "Left",
+      "Grass"
     ],
     [
       "Frances Tiafoe",
       "USA",
+      "🇺🇸",
       16,
-      2180,
-      0
+      2580,
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Arthur Fils",
       "France",
+      "🇫🇷",
       17,
-      1890,
-      0
+      2390,
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Hubert Hurkacz",
       "Poland",
+      "🇵🇱",
       18,
-      1880,
-      0
+      2280,
+      0,
+      "Right",
+      "Grass"
     ],
     [
       "Holger Rune",
       "Denmark",
+      "🇩🇰",
       19,
-      1825,
-      0
+      2225,
+      0,
+      "Right",
+      "Clay"
     ],
     [
       "Tommy Paul",
       "USA",
+      "🇺🇸",
       20,
-      1790,
-      0
+      2190,
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Sebastian Korda",
       "USA",
+      "🇺🇸",
       21,
-      1780,
-      0
+      1980,
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Lorenzo Musetti",
       "Italy",
+      "🇮🇹",
       22,
-      1720,
-      0
+      1920,
+      0,
+      "Right",
+      "Clay"
     ],
     [
       "Juan Martin del Potro",
       "Argentina",
+      "🇦🇷",
       23,
-      1700,
-      0
+      1900,
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Giovanni Mpetshi Perricard",
       "France",
+      "🇫🇷",
       24,
-      1620,
-      0
+      1820,
+      0,
+      "Right",
+      "Grass"
     ],
     [
       "Ugo Humbert",
       "France",
+      "🇫🇷",
       25,
-      1460,
-      0
+      1660,
+      0,
+      "Left",
+      "Hard"
     ],
     [
       "Matteo Berrettini",
       "Italy",
+      "🇮🇹",
       26,
-      1385,
-      0
+      1585,
+      0,
+      "Right",
+      "Grass"
     ],
     [
       "Karen Khachanov",
       "Russia",
+      "",
       27,
-      1380,
-      0
+      1580,
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Grigor Dimitrov",
       "Bulgaria",
+      "🇧🇬",
       28,
-      1340,
-      0
+      1540,
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Jakub Mensik",
       "Czechia",
+      "🇨🇿",
       29,
-      1315,
-      0
+      1515,
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Joao Fonseca",
       "Brazil",
+      "🇧🇷",
       30,
-      1280,
-      0
+      1480,
+      0,
+      "Right",
+      "Clay"
     ],
     [
       "Jiri Lehecka",
       "Czechia",
+      "🇨🇿",
       31,
-      1250,
-      0
+      1450,
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Denis Shapovalov",
       "Canada",
+      "🇨🇦",
       32,
-      1210,
-      0
+      1410,
+      0,
+      "Left",
+      "Hard"
     ],
     [
       "Tallon Griekspoor",
       "Netherlands",
+      "🇳🇱",
       33,
       1160,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Cameron Norrie",
       "Great Britain",
+      "🇬🇧",
       34,
       1125,
-      0
+      0,
+      "Left",
+      "Hard"
     ],
     [
       "Francisco Cerundolo",
       "Argentina",
+      "🇦🇷",
       35,
       1090,
-      0
+      0,
+      "Right",
+      "Clay"
     ],
     [
       "Nicolas Jarry",
       "Chile",
+      "🇨🇱",
       36,
       1060,
-      0
+      0,
+      "Right",
+      "Clay"
     ],
     [
       "Stefanos Tsitsipas",
       "Greece",
+      "🇬🇷",
       37,
       1050,
-      0
+      0,
+      "Right",
+      "Clay"
     ],
     [
       "Miomir Kecmanovic",
       "Serbia",
+      "🇷🇸",
       38,
       1005,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Jordan Thompson",
       "Australia",
+      "🇦🇺",
       39,
       980,
-      0
+      0,
+      "Right",
+      "Grass"
     ],
     [
       "Thanasi Kokkinakis",
       "Australia",
+      "🇦🇺",
       40,
       980,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Roger Federer",
       "Switzerland",
+      "🇨🇭",
       41,
       950,
-      0
+      0,
+      "Right",
+      "Grass"
     ],
     [
       "Gael Monfils",
       "France",
+      "🇫🇷",
       42,
       930,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Stan Wawrinka",
       "Switzerland",
+      "🇨🇭",
       43,
       910,
-      0
+      0,
+      "Right",
+      "Clay"
     ],
     [
       "Alexei Popyrin",
       "Australia",
+      "🇦🇺",
       44,
       900,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Kei Nishikori",
       "Japan",
+      "🇯🇵",
       45,
       890,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Andy Murray",
       "Great Britain",
+      "🇬🇧",
       46,
       870,
-      0
+      0,
+      "Right",
+      "Grass"
     ],
     [
       "Milos Raonic",
       "Canada",
+      "🇨🇦",
       47,
       850,
-      0
+      0,
+      "Right",
+      "Grass"
     ],
     [
       "Kevin Anderson",
       "South Africa",
+      "🇿🇦",
       48,
       830,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Richard Gasquet",
       "France",
+      "🇫🇷",
       49,
       810,
-      0
+      0,
+      "Right",
+      "Clay"
     ],
     [
       "Jan-Lennard Struff",
       "Germany",
+      "🇩🇪",
       50,
       804,
-      0
+      0,
+      "Right",
+      "Clay"
     ],
     [
       "Reilly Opelka",
       "USA",
+      "🇺🇸",
       51,
       790,
-      0
+      0,
+      "Right",
+      "Grass"
     ],
     [
       "Nick Kyrgios",
       "Australia",
+      "🇦🇺",
       52,
       775,
-      0
+      0,
+      "Right",
+      "Grass"
     ],
     [
       "Roberto Bautista Agut",
       "Spain",
+      "🇪🇸",
       53,
       760,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Marin Cilic",
       "Croatia",
+      "🇭🇷",
       54,
       745,
-      0
+      0,
+      "Right",
+      "Grass"
     ],
     [
       "David Goffin",
       "Belgium",
+      "🇧🇪",
       55,
       730,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Borna Coric",
       "Croatia",
+      "🇭🇷",
       56,
       715,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Fabio Fognini",
       "Italy",
+      "🇮🇹",
       57,
       700,
-      0
+      0,
+      "Right",
+      "Clay"
     ],
     [
       "Dominic Thiem",
       "Austria",
+      "🇦🇹",
       58,
       685,
-      0
+      0,
+      "Right",
+      "Clay"
     ],
     [
       "Jo-Wilfried Tsonga",
       "France",
+      "🇫🇷",
       59,
       670,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "John Isner",
       "USA",
+      "🇺🇸",
       60,
       655,
-      0
+      0,
+      "Right",
+      "Grass"
     ],
     [
       "Tomas Berdych",
       "Czechia",
+      "🇨🇿",
       61,
       640,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Jack Sock",
       "USA",
+      "🇺🇸",
       62,
       625,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Sam Querrey",
       "USA",
+      "🇺🇸",
       63,
       610,
-      0
+      0,
+      "Right",
+      "Grass"
     ],
     [
       "Bernard Tomic",
       "Australia",
+      "🇦🇺",
       64,
       595,
-      0
+      0,
+      "Right",
+      "Grass"
     ],
     [
       "Learner Tien",
       "USA",
+      "🇺🇸",
       65,
       560,
-      0
+      0,
+      "Left",
+      "Hard"
     ],
     [
       "Alex Michelsen",
       "USA",
+      "🇺🇸",
       66,
       545,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Dino Prizmic",
       "Croatia",
+      "🇭🇷",
       67,
       530,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Martin Landaluce",
       "Spain",
+      "🇪🇸",
       68,
       515,
-      0
+      0,
+      "Right",
+      "Clay"
     ],
     [
       "Christopher Eubanks",
       "USA",
+      "🇺🇸",
       69,
       500,
-      0
+      0,
+      "Right",
+      "Grass"
     ],
     [
       "Alexander Blockx",
       "Belgium",
+      "🇧🇪",
       70,
       485,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Kyle Edmund",
       "Great Britain",
+      "🇬🇧",
       71,
       470,
-      0
+      0,
+      "Right",
+      "Grass"
     ],
     [
       "Daniel Evans",
       "Great Britain",
+      "🇬🇧",
       72,
       455,
-      0
+      0,
+      "Right",
+      "Grass"
     ],
     [
       "Aleksandar Vukic",
       "Australia",
+      "🇦🇺",
       73,
       440,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Federico Coria",
       "Argentina",
+      "🇦🇷",
       74,
       425,
-      0
+      0,
+      "Right",
+      "Clay"
     ],
     [
       "Nuno Borges",
       "Portugal",
+      "🇵🇹",
       75,
       410,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Thiago Seyboth Wild",
       "Brazil",
+      "🇧🇷",
       76,
       395,
-      0
+      0,
+      "Right",
+      "Clay"
     ],
     [
       "Diego Schwartzman",
       "Argentina",
+      "🇦🇷",
       77,
       380,
-      0
+      0,
+      "Right",
+      "Clay"
     ],
     [
       "Matthew Ebden",
       "Australia",
+      "🇦🇺",
       78,
       365,
-      0
+      0,
+      "Right",
+      "Grass"
     ],
     [
       "Dominik Koepfer",
       "Germany",
+      "🇩🇪",
       79,
       350,
-      0
+      0,
+      "Left",
+      "Hard"
     ],
     [
       "Mariano Navone",
       "Argentina",
+      "🇦🇷",
       80,
       335,
-      0
+      0,
+      "Right",
+      "Clay"
     ],
     [
       "Tomas Martin Etcheverry",
       "Argentina",
+      "🇦🇷",
       81,
       320,
-      0
+      0,
+      "Right",
+      "Clay"
     ],
     [
       "Camilo Ugo Carabelli",
       "Argentina",
+      "🇦🇷",
       82,
       305,
-      0
+      0,
+      "Right",
+      "Clay"
     ],
     [
       "Jason Kubler",
       "Australia",
+      "🇦🇺",
       83,
       290,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Mackenzie McDonald",
       "USA",
+      "🇺🇸",
       84,
       275,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Max Purcell",
       "Australia",
+      "🇦🇺",
       85,
       260,
-      0
+      0,
+      "Right",
+      "Grass"
     ],
     [
       "Yoshihito Nishioka",
       "Japan",
+      "🇯🇵",
       86,
       245,
-      0
+      0,
+      "Left",
+      "Hard"
     ],
     [
       "J.J. Wolf",
       "USA",
+      "🇺🇸",
       87,
       230,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Luca Van Assche",
       "France",
+      "🇫🇷",
       88,
       215,
-      0
+      0,
+      "Right",
+      "Clay"
     ],
     [
       "Christopher O'Connell",
       "Australia",
+      "🇦🇺",
       89,
       200,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Rinky Hijikata",
       "Australia",
+      "🇦🇺",
       90,
       185,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Taro Daniel",
       "Japan",
+      "🇯🇵",
       91,
       170,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Arthur Rinderknech",
       "France",
+      "🇫🇷",
       92,
       155,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Yibing Wu",
       "China",
+      "🇨🇳",
       93,
       140,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Michael Mmoh",
       "USA",
+      "🇺🇸",
       94,
       125,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Zizou Bergs",
       "Belgium",
+      "🇧🇪",
       95,
       110,
-      0
+      0,
+      "Right",
+      "Hard"
     ],
     [
       "Benoit Paire",
       "France",
+      "🇫🇷",
       96,
       95,
-      0
+      0,
+      "Right",
+      "Clay"
     ]
   ],
   "tournaments": [
@@ -678,92 +967,129 @@ const DATA = {
       "id": "ao2026",
       "name": "Australian Open 2026",
       "short": "AO",
+      "category": "Grand Slam",
       "color": "#1d4ed8",
       "surface": "Hard",
       "city": "Melbourne",
+      "dates": "12–25 Jan",
       "champion": "Novak Djokovic",
       "runnerUp": "Carlos Alcaraz",
       "mvp": "Rafael Nadal",
       "score": "6-7(6), 7-5, 6-4, 3-6, 6-3",
-      "status": "Closed"
+      "status": "Closed",
+      "story": "Djokovic survived Alcaraz in a five-set final. Nadal became the soul of the tournament after shocking Sinner."
     },
     {
       "id": "iw2026",
       "name": "Indian Wells 2026",
       "short": "IW",
+      "category": "Masters 1000",
       "color": "#0ea5e9",
       "surface": "Hard",
       "city": "Indian Wells",
+      "dates": "March",
       "champion": "Novak Djokovic",
       "runnerUp": "Carlos Alcaraz",
       "mvp": "Novak Djokovic",
       "score": "6-4, 4-6, 7-6(5)",
-      "status": "Closed"
+      "status": "Closed",
+      "story": "Djokovic extended his dominance with another thriller over Alcaraz."
     },
     {
       "id": "miami2026",
       "name": "Miami 2026",
       "short": "MIA",
+      "category": "Masters 1000",
       "color": "#06b6d4",
       "surface": "Hard",
       "city": "Miami",
+      "dates": "March",
       "champion": "Carlos Alcaraz",
       "runnerUp": "Novak Djokovic",
       "mvp": "Carlos Alcaraz",
       "score": "4-6, 7-5, 6-3",
-      "status": "Closed"
+      "status": "Closed",
+      "story": "Alcaraz answered in Miami and stopped Djokovic’s hard-court streak."
     },
     {
       "id": "mc2026",
       "name": "Monte-Carlo 2026",
       "short": "MC",
+      "category": "Masters 1000",
       "color": "#c2410c",
       "surface": "Clay",
       "city": "Monte-Carlo",
+      "dates": "April",
       "champion": "Rafael Nadal",
       "runnerUp": "Carlos Alcaraz",
       "mvp": "Rafael Nadal",
       "score": "6-4, 3-6, 6-3",
-      "status": "Closed"
+      "status": "Closed",
+      "story": "Nadal returned to clay with authority and defeated Alcaraz in the final."
     },
     {
       "id": "madrid2026",
       "name": "Madrid 2026",
       "short": "MAD",
+      "category": "Masters 1000",
       "color": "#ea580c",
       "surface": "Clay",
       "city": "Madrid",
+      "dates": "May",
       "champion": "Novak Djokovic",
       "runnerUp": "Rafael Nadal",
       "mvp": "Novak Djokovic",
       "score": "4-6, 7-5, 6-4",
-      "status": "Closed"
+      "status": "Closed",
+      "story": "Djokovic came back against Nadal in a dramatic Madrid final."
     },
     {
       "id": "rome2026",
       "name": "Rome 2026",
       "short": "ROM",
+      "category": "Masters 1000",
       "color": "#b45309",
       "surface": "Clay",
       "city": "Rome",
+      "dates": "May",
       "champion": "Rafael Nadal",
       "runnerUp": "Novak Djokovic",
       "mvp": "Rafael Nadal",
       "score": "6-3, 4-6, 6-4",
-      "status": "Closed"
+      "status": "Closed",
+      "story": "Nadal won Rome and arrived in Paris as the clay-season king."
     },
     {
       "id": "rg2026",
       "name": "Roland Garros 2026",
       "short": "RG",
+      "category": "Grand Slam",
       "color": "#f97316",
       "surface": "Clay",
       "city": "Paris",
+      "dates": "Next",
       "champion": "TBD",
       "runnerUp": "TBD",
       "mvp": "TBD",
       "score": "Not started",
-      "status": "Next"
+      "status": "Next",
+      "story": "The next Grand Slam begins with Djokovic, Nadal, Alcaraz and Sinner all chasing history."
+    },
+    {
+      "id": "wim2026",
+      "name": "Wimbledon 2026",
+      "short": "WIM",
+      "category": "Grand Slam",
+      "color": "#16a34a",
+      "surface": "Grass",
+      "city": "London",
+      "dates": "July",
+      "champion": "TBD",
+      "runnerUp": "TBD",
+      "mvp": "TBD",
+      "score": "Not started",
+      "status": "Upcoming",
+      "story": "The grass season will test the entire ATP Universe."
     }
   ],
   "aoMatches": [
@@ -845,5 +1171,21 @@ const DATA = {
       "6-7(6), 7-5, 6-4, 3-6, 6-3"
     ]
   ],
-  "version": "3.0"
+  "news": [
+    {
+      "title": "Roland Garros awaits",
+      "tag": "Preview",
+      "text": "Djokovic owns three titles, Nadal owns the clay season, Alcaraz wants revenge and Sinner still holds the rankings lead."
+    },
+    {
+      "title": "Australian Open archive restored",
+      "tag": "Archive",
+      "text": "The Australian Open final-stage bracket is now part of the official ATP Universe database."
+    },
+    {
+      "title": "128-player expansion planned",
+      "tag": "Database",
+      "text": "The next player expansion will move ATP Universe Grand Slams toward a full 128-player draw."
+    }
+  ]
 };

@@ -1,3 +1,3 @@
-# ATP Universe v3.0
+# ATP Universe v4.0
 
-Big update: tournament pages, colored brackets, 96-player database, calendar and news.
+Major update: player profiles, ATP Race, records, colored tournament pages, bracket page and admin prototype.
