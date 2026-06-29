@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ATP Universe 2026</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATP Universe v3</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <div>
-      <h1>ATP Universe</h1>
-      <p>2026 Season · Road to Roland Garros</p>
-    </div>
-    <div class="version">v2.0</div>
-  </header>
-
-  <nav class="tabs">
-    <button onclick="showTab('home')">Home</button>
-    <button onclick="showTab('rankings')">Rankings</button>
-    <button onclick="showTab('players')">Players</button>
-    <button onclick="showTab('tournaments')">Tournaments</button>
-    <button onclick="showTab('australia')">Australian Open</button>
-    <button onclick="showTab('admin')">Admin</button>
-  </nav>
-
-  <main>
-    <section id="home" class="tab active"></section>
-    <section id="rankings" class="tab"></section>
-    <section id="players" class="tab"></section>
-    <section id="tournaments" class="tab"></section>
-    <section id="australia" class="tab"></section>
-    <section id="admin" class="tab"></section>
-  </main>
-
-  <script src="data.js"></script>
-  <script src="script.js"></script>
+<header class="app-header">
+  <div>
+    <h1>ATP Universe</h1>
+    <p>Season 2026 · v3.0</p>
+  </div>
+  <button class="menuBtn" onclick="toggleMenu()">☰</button>
+</header>
+<nav id="nav">
+  <button onclick="showTab('home')">Home</button>
+  <button onclick="showTab('rankings')">Rankings</button>
+  <button onclick="showTab('players')">Players</button>
+  <button onclick="showTab('tournaments')">Tournaments</button>
+  <button onclick="showTab('bracket')">Bracket</button>
+  <button onclick="showTab('calendar')">Calendar</button>
+  <button onclick="showTab('news')">News</button>
+</nav>
+<main>
+<section id="home" class="tab active"></section>
+<section id="rankings" class="tab"></section>
+<section id="players" class="tab"></section>
+<section id="tournaments" class="tab"></section>
+<section id="bracket" class="tab"></section>
+<section id="calendar" class="tab"></section>
+<section id="news" class="tab"></section>
+</main>
+<script src="data.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

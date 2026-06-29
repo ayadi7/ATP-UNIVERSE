@@ -1,12 +1,3 @@
-# ATP Universe 2026
+# ATP Universe v3.0
 
-Version 2.0 of the ATP Universe web app.
-
-## Update instructions
-Upload/replace these files in your GitHub repository:
-- index.html
-- style.css
-- script.js
-- data.js
-
-Then wait for GitHub Pages to update.
+Big update: tournament pages, colored brackets, 96-player database, calendar and news.
