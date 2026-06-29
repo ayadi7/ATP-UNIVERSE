@@ -1,3 +1,3 @@
-# ATP Universe v4.0
+# ATP Universe v4.1
 
-Major update: player profiles, ATP Race, records, colored tournament pages, bracket page and admin prototype.
+Fix: Player tab, default player profile, improved game-style bracket.

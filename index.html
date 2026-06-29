@@ -1,39 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ATP Universe v4.0</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header class="app-header">
-  <div class="brand"><div class="logo">ATP</div><div><h1>ATP Universe</h1><p>Season 2026 · v4.0</p></div></div>
-  <button class="theme" onclick="toggleTheme()">☾</button>
-</header>
-<nav class="nav">
-<button onclick="showTab('home')">Home</button>
-<button onclick="showTab('rankings')">Rankings</button>
-<button onclick="showTab('race')">Race</button>
-<button onclick="showTab('players')">Players</button>
-<button onclick="showTab('tournaments')">Tournaments</button>
-<button onclick="showTab('bracket')">Bracket</button>
-<button onclick="showTab('playerProfile')">Player</button>
-<button onclick="showTab('records')">Records</button>
-<button onclick="showTab('admin')">Admin</button>
-</nav>
-<main>
-<section id="home" class="tab active"></section>
-<section id="rankings" class="tab"></section>
-<section id="race" class="tab"></section>
-<section id="players" class="tab"></section>
-<section id="tournaments" class="tab"></section>
-<section id="bracket" class="tab"></section>
-<section id="playerProfile" class="tab"></section>
-<section id="records" class="tab"></section>
-<section id="admin" class="tab"></section>
-</main>
-<script src="data.js"></script>
-<script src="script.js"></script>
-</body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ATP Universe v4.1</title><link rel="stylesheet" href="style.css"></head><body>
+<header><div><h1>ATP Universe</h1><p>Season 2026 · v4.1</p></div><button onclick="toggleTheme()">☾</button></header>
+<nav><button onclick="show('home')">Home</button><button onclick="show('rankings')">Rankings</button><button onclick="show('players')">Players</button><button onclick="show('tournaments')">Tournaments</button><button onclick="show('bracket')">Bracket</button><button onclick="show('profile')">Player</button></nav>
+<main><section id="home" class="tab active"></section><section id="rankings" class="tab"></section><section id="players" class="tab"></section><section id="tournaments" class="tab"></section><section id="bracket" class="tab"></section><section id="profile" class="tab"></section></main>
+<script src="data.js"></script><script src="script.js"></script></body></html>
