@@ -1,5 +1,40 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ATP Universe v4.1</title><link rel="stylesheet" href="style.css"></head><body>
-<header><div><h1>ATP Universe</h1><p>Season 2026 · v4.1</p></div><button onclick="toggleTheme()">☾</button></header>
-<nav><button onclick="show('home')">Home</button><button onclick="show('rankings')">Rankings</button><button onclick="show('players')">Players</button><button onclick="show('tournaments')">Tournaments</button><button onclick="show('bracket')">Bracket</button><button onclick="show('profile')">Player</button></nav>
-<main><section id="home" class="tab active"></section><section id="rankings" class="tab"></section><section id="players" class="tab"></section><section id="tournaments" class="tab"></section><section id="bracket" class="tab"></section><section id="profile" class="tab"></section></main>
-<script src="data.js"></script><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>ATP Universe v5</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>ATP Universe</h1>
+    <p>2026 Season Manager · v5</p>
+  </div>
+  <button class="pill" onclick="toggleTheme()">Theme</button>
+</header>
+<nav>
+  <button onclick="view('home')">Home</button>
+  <button onclick="view('rankings')">Rankings</button>
+  <button onclick="view('race')">Race</button>
+  <button onclick="view('players')">Players</button>
+  <button onclick="view('tournaments')">Tournaments</button>
+  <button onclick="view('australia')">AO Archive</button>
+  <button onclick="view('sim')">Simulator</button>
+  <button onclick="view('admin')">Admin</button>
+</nav>
+<main>
+<section id="home" class="page active"></section>
+<section id="rankings" class="page"></section>
+<section id="race" class="page"></section>
+<section id="players" class="page"></section>
+<section id="tournaments" class="page"></section>
+<section id="australia" class="page"></section>
+<section id="sim" class="page"></section>
+<section id="admin" class="page"></section>
+</main>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
