@@ -1,5 +1,3 @@
-# ATP Universe v5
+# ATP Universe Pro v6
 
-Upload these files to GitHub Pages.
-
-Files: index.html, style.css, script.js, data.js, README.md
+Replace files in GitHub Pages: index.html, style.css, script.js, data.js, README.md
