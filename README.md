@@ -1,3 +1,3 @@
-# ATP Universe Pro 1.0
+# ATP Universe Pro 2.0
 
-Stable project version.
+Visual rebuild. Replace all files in GitHub Pages.
