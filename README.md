@@ -1,3 +1,3 @@
-# ATP Universe Pro v6
+# ATP Universe Pro v6.1
 
-Replace files in GitHub Pages: index.html, style.css, script.js, data.js, README.md
+Stable fixed version.
