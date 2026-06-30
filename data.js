@@ -1585,8 +1585,8 @@ const DATA = {
       "image": ""
     },
     {
-      "id": "christopher-oconnell",
-      "name": "Christopher OConnell",
+      "id": "christopher-o-connell",
+      "name": "Christopher O'Connell",
       "country": "Australia",
       "flag": "🇦🇺",
       "rank": 89,
@@ -2307,38 +2307,6 @@ const DATA = {
   ],
   "tournaments": [
     {
-      "id": "ao",
-      "name": "Australian Open",
-      "category": "Grand Slam",
-      "surface": "Hard",
-      "champion": "Novak Djokovic",
-      "runner": "Carlos Alcaraz",
-      "score": "6-7(6), 7-5, 6-4, 3-6, 6-3",
-      "status": "Completed",
-      "mvp": "Rafael Nadal",
-      "color": "blue",
-      "matches": [
-        [
-          "R16",
-          "Rafael Nadal",
-          "Jannik Sinner",
-          "7-6(5), 6-4, 7-5"
-        ],
-        [
-          "QF",
-          "Novak Djokovic",
-          "Matteo Berrettini",
-          "6-7(5), 6-3, 6-4, 7-6(6)"
-        ],
-        [
-          "Final",
-          "Novak Djokovic",
-          "Carlos Alcaraz",
-          "6-7(6), 7-5, 6-4, 3-6, 6-3"
-        ]
-      ]
-    },
-    {
       "id": "rg",
       "name": "Roland Garros",
       "category": "Grand Slam",
@@ -2348,7 +2316,6 @@ const DATA = {
       "score": "",
       "status": "Next",
       "mvp": "",
-      "color": "clay",
       "matches": [
         [
           "R1",
@@ -2359,114 +2326,39 @@ const DATA = {
       ]
     },
     {
-      "id": "iw",
-      "name": "Indian Wells",
-      "category": "Masters 1000",
+      "id": "ao",
+      "name": "Australian Open",
+      "category": "Grand Slam",
       "surface": "Hard",
       "champion": "Novak Djokovic",
       "runner": "Carlos Alcaraz",
-      "score": "6-4, 4-6, 7-6(5)",
-      "status": "Completed",
-      "mvp": "Novak Djokovic",
-      "color": "purple",
-      "matches": [
-        [
-          "Final",
-          "Novak Djokovic",
-          "Carlos Alcaraz",
-          "6-4, 4-6, 7-6(5)"
-        ]
-      ]
-    },
-    {
-      "id": "miami",
-      "name": "Miami",
-      "category": "Masters 1000",
-      "surface": "Hard",
-      "champion": "Carlos Alcaraz",
-      "runner": "Novak Djokovic",
-      "score": "4-6, 7-5, 6-3",
-      "status": "Completed",
-      "mvp": "Carlos Alcaraz",
-      "color": "cyan",
-      "matches": [
-        [
-          "Final",
-          "Carlos Alcaraz",
-          "Novak Djokovic",
-          "4-6, 7-5, 6-3"
-        ]
-      ]
-    },
-    {
-      "id": "mc",
-      "name": "Monte-Carlo",
-      "category": "Masters 1000",
-      "surface": "Clay",
-      "champion": "Rafael Nadal",
-      "runner": "Carlos Alcaraz",
-      "score": "6-4, 3-6, 6-3",
+      "score": "6-7(6), 7-5, 6-4, 3-6, 6-3",
       "status": "Completed",
       "mvp": "Rafael Nadal",
-      "color": "orange",
       "matches": [
         [
-          "Final",
+          "R16",
           "Rafael Nadal",
+          "Jannik Sinner",
+          "7-6(5), 6-4, 7-5"
+        ],
+        [
+          "Final",
+          "Novak Djokovic",
           "Carlos Alcaraz",
-          "6-4, 3-6, 6-3"
-        ]
-      ]
-    },
-    {
-      "id": "madrid",
-      "name": "Madrid",
-      "category": "Masters 1000",
-      "surface": "Clay",
-      "champion": "Novak Djokovic",
-      "runner": "Rafael Nadal",
-      "score": "4-6, 7-5, 6-4",
-      "status": "Completed",
-      "mvp": "Novak Djokovic",
-      "color": "red",
-      "matches": [
-        [
-          "Final",
-          "Novak Djokovic",
-          "Rafael Nadal",
-          "4-6, 7-5, 6-4"
-        ]
-      ]
-    },
-    {
-      "id": "rome",
-      "name": "Rome",
-      "category": "Masters 1000",
-      "surface": "Clay",
-      "champion": "Rafael Nadal",
-      "runner": "Novak Djokovic",
-      "score": "6-3, 4-6, 6-4",
-      "status": "Completed",
-      "mvp": "Rafael Nadal",
-      "color": "gold",
-      "matches": [
-        [
-          "Final",
-          "Rafael Nadal",
-          "Novak Djokovic",
-          "6-3, 4-6, 6-4"
+          "6-7(6), 7-5, 6-4, 3-6, 6-3"
         ]
       ]
     }
   ],
   "news": [
     {
-      "title": "128-player roster is locked",
-      "body": "The 32 new players have been added to ATP Universe."
+      "title": "128-player roster added",
+      "body": "The new 32 players are included."
     },
     {
-      "title": "Game character photos added",
-      "body": "15 Tiebreak character photos are connected to the correct player profiles."
+      "title": "15 game photos linked",
+      "body": "Photos are included inside images/players."
     }
   ]
 };
